@@ -11,7 +11,7 @@ Step 1: Create Hive UDF script (codes provided)
 
 Step 2: Create tables, load data, perform transformation into new table on Hive Beeline CLI:
 
-Create and load table:
+**Create and load table:
 
 Create table part (
 p_partkey     int,
@@ -42,7 +42,7 @@ p_container   varchar(10))
 row format delimited fields
 terminated by '\t' stored as textfile;
 
-Hive Query:
+**Hive Query:
 
 ADD FILE /home/ec2-user/hive_udf.py; 
 INSERT OVERWRITE TABLE part_new SELECT TRANSFORM (p_partkey,p_name,p_mfgr,p_category,p_brand1,p_color,p_type,p_size,p_container) 

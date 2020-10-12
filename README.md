@@ -81,4 +81,4 @@ hadoop fs -ls /data/output
 
 hadoop fs -cat /data/output/part-00000
 
-# Credits to Prof. Rasin for Input Data
+**Credits to Prof. Rasin for Input Data**

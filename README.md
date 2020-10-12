@@ -22,6 +22,13 @@ cat employee.txt customer.txt > combined.txt
 
 Step 2: Create Mapper and Reducer file (codes provided)
 
-Step 3: Run Hadoop Streaming commands
+Step 3: Run Hadoop Streaming on Command Line
 
 hadoop jar hadoop-streaming-2.6.4.jar -input /user/ec2-user/combined.txt -output /data/output -mapper mapper.py -reducer reducer.py -file mapper.py -file reducer.py
+
+Step 4: Check Result on Command Line
+
+hadoop fs -ls /data/A4P4_output
+
+hadoop fs -cat /data/A4P4_output/part-00000
+

@@ -9,7 +9,7 @@ http://rasinsrv07.cstcis.cti.depaul.edu/CSC555/SSBM1/part.tbl
 
 Step 1: Create Hive UDF script (codes provided)
 
-Step 2: Create tables, load data, perform transformation into new table:
+Step 2: Create tables, load data, perform transformation into new table on Hive Beeline CLI:
 
 Create and load table:
 

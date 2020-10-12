@@ -10,8 +10,18 @@ SELECT EFirst, ELast, COUNT(*)
 FROM Employee, Customer
 WHERE EFirst = CFirst AND ELast = CLast;
 
-Using the imput data:
+Using the input data:
 
 http://rasinsrv07.cstcis.cti.depaul.edu/CSC555/employee.txt
 
 http://rasinsrv07.cstcis.cti.depaul.edu/CSC555/customer.txt
+
+Step 1: Run on Command line
+
+cat employee.txt customer.txt > combined.txt
+
+Step 2: Create Mapper and Reducer file (codes provided)
+
+Step 3: Run Hadoop Streaming commands
+
+hadoop jar hadoop-streaming-2.6.4.jar -input /user/ec2-user/combined.txt -output /data/output -mapper mapper.py -reducer reducer.py -file mapper.py -file reducer.py

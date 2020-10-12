@@ -11,5 +11,5 @@ FROM Employee, Customer
 WHERE EFirst = CFirst AND ELast = CLast;
 
 Using the imput data:
-http://rasinsrv07.cstcis.cti.depaul.edu/CSC555/employee.txt
+http://rasinsrv07.cstcis.cti.depaul.edu/CSC555/employee.txt /n
 http://rasinsrv07.cstcis.cti.depaul.edu/CSC555/customer.txt
